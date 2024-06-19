@@ -9,25 +9,19 @@ while True:
 
 		# Numeros
 
-		suma = input("Numeros sepadaros por espacios: ")
+		suma = input("\nNumeros sepadaros por espacios: ")
 		suma = suma.split()
 		
 		for numero in suma:
-			if numero.isnumeric():
-				total += float(numero)
+			total += float(numero)
 
-			else:
-				raise ValueError("No es un numero")
+		break
 
 	# Excepciones que manejan los errores de ejecucion
 
 	except ValueError:
-		print("Son incorrectos")
+		print("\nSon incorrectos")
 		print("Vuelve a introducir los numeros")
 
-	else:		
-		print(f"El valor de la suma: {total}")
-		break
-
 	finally:
-		print("Ha terminado la iteracion")
+		print(f"El valor de la suma: {total}")
