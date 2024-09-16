@@ -5,16 +5,13 @@ def elegir(frutas):
 
 	try:		
 		print(frutas)
-		index = int(input("Elige fruta (Pon el numero): "))
+		index = int(input("Elige fruta (Pon el número): "))
 		print(f"Tu fruta favorita es: {frutas[index]}")
 
-	except IndexError:
-		print("Indice incorrecto")
-
 	except ValueError:
-		print("Tienes que poner un numero entero")
+		print("Tienes que poner un número del diccionario de frutas")
 
-	except Exception:
-		print("Ha ocurrido un error")
+	except Exception as e:
+		print("Ha ocurrido un error", e)
 
 elegir(frutas)

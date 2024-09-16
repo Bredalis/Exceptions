@@ -15,7 +15,7 @@ def elegir(frutas):
 		index = int(input("Introduce tu fruta (Pon un numeros): "))
 		print(f"Tu fruta favorita es: {frutas[index]}")
 
-	except Exception:
-		print("Ha ocurrido un error")
+	except Exception as e:
+		print("Ha ocurrido un error", e)
 
 elegir(frutas)
