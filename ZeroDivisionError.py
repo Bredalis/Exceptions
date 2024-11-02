@@ -1,10 +1,12 @@
 
+# Manejo de divisiones entre cero
 def division(dividendo, divisor):
-
 	try:
-		print(f"Resultado: {dividendo / divisor}")
+		resultado = dividendo / divisor
+		print(f"Resultado: {resultado}")
 
 	except ZeroDivisionError:
-		print("No se puede dividir por cero")
+		print("No se puede dividir por cero.")
 
+# Llamar a la función
 division(2, 0)
