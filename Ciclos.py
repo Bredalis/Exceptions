@@ -1,6 +1,6 @@
 
 def sumar_numeros():
-	"""Suma los números ingresados por el usuario."""
+	print(f"Suma los números ingresados por el usuario./n")
 
 	while True:
 		try:
