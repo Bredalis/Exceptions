@@ -70,13 +70,13 @@ To run a program from the terminal:
 1️⃣ Go to the file location:
 
 ```bash
-cd path-to-program
+cd path_to_program
 ```
 
 2️⃣ Run the Python file:
 
 ```bash
-python program-name.py
+python program_name.py
 ```
 
 ---
